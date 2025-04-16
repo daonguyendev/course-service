@@ -1,2 +1,17 @@
-greeting:
-  message: "hello"
+quarkus:
+  datasource:
+    db-kind: postgresql
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/course_service
+    username: postgres
+    password: postgres
+  hibernate-orm:
+    database:
+      generation: update # or 'drop-and-create' for dev/test
+    log:
+      sql: true
+
+  # Turn off DevServices if using real database
+    devservices:
+      enabled: false
+

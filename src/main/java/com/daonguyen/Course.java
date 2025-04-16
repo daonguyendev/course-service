@@ -24,6 +24,7 @@ import jakarta.persistence.Entity;
  * }
  */
 @Entity
-public class MyEntity extends PanacheEntity {
-    public String field;
+public class Course extends PanacheEntity {
+    public Long id;
+    public String name;
 }
